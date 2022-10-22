@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.impl.Addition;
-import org.example.impl.Division;
-import org.example.impl.Multiplication;
-import org.example.impl.Subtraction;
+import org.example.impl.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -33,5 +30,11 @@ public class OperationTest {
     void subtractionTest() {
         operation = new Subtraction();
         Assertions.assertEquals(2.22, operation.performOperation(4.44, 2.22));
+    }
+
+    @Test
+    void powTest() {
+        operation = new PowerOf();
+        Assertions.assertEquals(5.861311064048438, operation.performOperation(2.21, 2.23));
     }
 }

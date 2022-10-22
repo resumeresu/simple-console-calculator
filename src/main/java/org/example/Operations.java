@@ -1,16 +1,13 @@
 package org.example;
 
-import org.example.impl.Addition;
-import org.example.impl.Division;
-import org.example.impl.Multiplication;
-import org.example.impl.Subtraction;
+import org.example.impl.*;
 
 public enum Operations {
     ADDITION(new Addition()),
     SUBTRACTION(new Subtraction()),
     MULTIPLICATION(new Multiplication()),
-    DIVISION(new Division());
-    //TODO: to add 'power' operation
+    DIVISION(new Division()),
+    POWER_OF(new PowerOf());
 
     private final Operation operation;
 

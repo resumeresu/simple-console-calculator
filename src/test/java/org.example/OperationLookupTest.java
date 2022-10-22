@@ -11,6 +11,7 @@ public class OperationLookupTest {
             "-, Subtraction",
             "*, Multiplication",
             "/, Division",
+            "^, To the power of"
     })
     @ParameterizedTest
     void lookupTest(char symbol, String name) {
